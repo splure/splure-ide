@@ -18,7 +18,7 @@ if [[ -d "$SRC/.git" ]]; then
 	git -C "$SRC" clean -q -fdx -e node_modules -e '**/node_modules'
 else
 	echo "==> Cloning $VSCODE_REPO @ $VSCODE_TAG"
-	git -c advice.detachedHead=false clone -q --depth 1 --branch "$VSCODE_TAG" "$VSCODE_REPO" "$SRC"
+	git -c advice.detachedHead=false -c core.autocrlf=false clone -q --depth 1 --branch "$VSCODE_TAG" "$VSCODE_REPO" "$SRC"
 fi
 
 echo "==> Branding"
