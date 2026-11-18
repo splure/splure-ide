@@ -18,7 +18,16 @@ export ELECTRON_SKIP_BINARY_DOWNLOAD=1 PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
 export npm_config_arch="$ARCH"
 
 echo "==> Installing dependencies"
-for i in 1 2 3; do pnpm install --frozen-lockfile && break; echo "pnpm install failed ($i), retrying"; sleep 10; done
+for i in 1 2 3; do
+	pnpm install --frozen-lockfile && break
+	if [[ $i == 3 ]]; then echo "pnpm install failed 3 times, giving up" >&2; exit 1; fi
+	echo "pnpm install failed ($i), retrying"; sleep 10
+done
+
+# Spluride ships without the built-in GitHub Copilot extension: it doesn't package
+# outside Microsoft's own pipeline, and AI features are off by default anyway.
+# Removed after install because upstream's postinstall expects the folder to exist.
+rm -rf extensions/copilot
 
 echo "==> Building vscode-$PLATFORM-$ARCH-min"
 pnpm run gulp "vscode-$PLATFORM-$ARCH-min"
