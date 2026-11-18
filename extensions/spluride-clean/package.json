@@ -1,0 +1,58 @@
+{
+  "name": "spluride-clean",
+  "displayName": "%displayName%",
+  "description": "%description%",
+  "categories": [
+    "Themes"
+  ],
+  "version": "1.0.0",
+  "publisher": "spluride",
+  "license": "MIT",
+  "engines": {
+    "vscode": "*"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "id": "Spluride Dark",
+        "label": "%darkThemeLabel%",
+        "uiTheme": "vs-dark",
+        "path": "./themes/spluride-dark.json"
+      },
+      {
+        "id": "Spluride Light",
+        "label": "%lightThemeLabel%",
+        "uiTheme": "vs",
+        "path": "./themes/spluride-light.json"
+      }
+    ],
+    "configurationDefaults": {
+      "workbench.colorTheme": "Spluride Dark",
+      "workbench.preferredDarkColorTheme": "Spluride Dark",
+      "workbench.preferredLightColorTheme": "Spluride Light",
+
+      "workbench.startupEditor": "none",
+      "workbench.tips.enabled": false,
+      "workbench.editor.empty.hint": "hidden",
+      "workbench.layoutControl.enabled": false,
+      "workbench.activityBar.location": "top",
+      "workbench.tree.renderIndentGuides": "onHover",
+      "workbench.list.smoothScrolling": true,
+      "window.commandCenter": false,
+      "chat.disableAIFeatures": true,
+
+      "breadcrumbs.enabled": false,
+      "editor.minimap.enabled": false,
+      "editor.stickyScroll.enabled": false,
+      "editor.overviewRulerBorder": false,
+      "editor.hideCursorInOverviewRuler": true,
+      "editor.renderLineHighlight": "gutter",
+      "editor.padding.top": 8,
+      "editor.smoothScrolling": true,
+      "editor.cursorSmoothCaretAnimation": "on",
+      "editor.cursorBlinking": "smooth",
+      "editor.scrollbar.verticalScrollbarSize": 10,
+      "editor.scrollbar.horizontalScrollbarSize": 10
+    }
+  }
+}

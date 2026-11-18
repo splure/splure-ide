@@ -1,0 +1,41 @@
+{
+	"nameShort": "Spluride",
+	"nameLong": "Spluride",
+	"applicationName": "spluride",
+	"dataFolderName": ".spluride",
+	"sharedDataFolderName": ".spluride-shared",
+	"serverApplicationName": "spluride-server",
+	"serverDataFolderName": ".spluride-server",
+	"tunnelApplicationName": "spluride-tunnel",
+	"win32DirName": "Spluride",
+	"win32NameVersion": "Spluride",
+	"win32RegValueName": "Spluride",
+	"win32x64AppId": "{{CEBC0BEF-391C-4429-8C0D-B86FF7FEA341}",
+	"win32arm64AppId": "{{B772A2DD-DFEB-43C9-BB3D-36CED3296EE8}",
+	"win32x64UserAppId": "{{5059F8C8-6C8F-4AC6-B1A0-893C118F51D7}",
+	"win32arm64UserAppId": "{{BDCA3F98-15EE-49A4-A47E-30EB4FC62319}",
+	"win32AppUserModelId": "Spluride.Spluride",
+	"win32ShellNameShort": "&Spluride",
+	"win32MutexName": "spluride",
+	"win32TunnelServiceMutex": "spluride-tunnelservice",
+	"win32TunnelMutex": "spluride-tunnel",
+	"darwinBundleIdentifier": "cc.splure.spluride",
+	"darwinProfileUUID": "96E16B51-84B7-426A-A302-DDBB782F7F92",
+	"darwinProfilePayloadUUID": "670A63C1-35F9-420E-A14E-E02663370815",
+	"linuxDesktopName": "cc.splure.Spluride",
+	"linuxIconName": "spluride",
+	"urlProtocol": "spluride",
+	"reportIssueUrl": "",
+	"extensionsGallery": {
+		"serviceUrl": "https://open-vsx.org/vscode/gallery",
+		"itemUrl": "https://open-vsx.org/vscode/item",
+		"extensionUrlTemplate": "https://open-vsx.org/vscode/gallery/{publisher}/{name}/latest",
+		"resourceUrlTemplate": "https://open-vsx.org/vscode/unpkg/{publisher}/{name}/{version}/{path}",
+		"controlUrl": "",
+		"nlsBaseUrl": "",
+		"publisherUrl": ""
+	},
+	"linkProtectionTrustedDomains": [
+		"https://open-vsx.org"
+	]
+}
