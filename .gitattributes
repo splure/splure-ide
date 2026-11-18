@@ -1,0 +1,3 @@
+# Keep Unix line endings everywhere, including Windows checkouts:
+# patches and shell scripts break with CRLF.
+* text=auto eol=lf
